@@ -39,23 +39,29 @@
 :root {
 	interpolate-size: allow-keywords;
 
-	--background: linear-gradient(45deg, #0c0a09 0%, #1c1917 45%, #0c0a09 100%);
-	--header: linear-gradient(90deg, #1c1917e0, #2dd4bf, #0c0a09);
-	--btn-accent: linear-gradient(135deg, #fb923c, #ea580c);
-	--btn-inherit: #fff7ed;
-	--accent: linear-gradient(135deg, #f97316, #c2410c);
-	--sub-title: linear-gradient(-135deg, #2dd4bf30, #042f2e);
-	--gift: #f0fdfae1;
-	--gift-bg: rgba(251, 146, 60, 0.1);
-	--gift-btn: linear-gradient(135deg, #9a3412, #431407);
-	--border-radius: 10px;
-	--container: #0c0a09;
-	--table: linear-gradient(180deg, #1c1917, #0c0a09);
-	--minus: #38bdf8;
-	--shadow: #fb923c50;
-	--second-shadow: #ea580c;
-	--text-shadow: #2dd4bf;
-	--list-bg: linear-gradient(90deg, rgba(45, 212, 191, 0.1), rgba(251, 146, 60, 0.1));
+	--background: linear-gradient(45deg, #050505 0%, #062c24 45%, #050505 100%);
+	--header: linear-gradient(90deg, rgba(6, 44, 36, 0.88), #10b981, #050505);
+
+	/* Акцентні кнопки: від смарагду до неонового лайма */
+	--btn-accent: linear-gradient(135deg, #10b981, #a3e635);
+	--btn-inherit: #f7fee7; /* Світло-лимонний відтінок */
+
+	--accent: linear-gradient(135deg, #059669, #10b981);
+	--sub-title: linear-gradient(-135deg, rgba(16, 185, 129, 0.2), #022c22);
+
+	--gift: #ecfdf5;
+	--gift-bg: rgba(163, 230, 53, 0.1);
+	--gift-btn: linear-gradient(135deg, #064e3b, #022c22);
+
+	--border-radius: 12px;
+	--container: #050505;
+	--table: linear-gradient(180deg, #062c24, #050505);
+
+	--minus: #22d3ee; /* Залишив краплю блакитного для контрасту */
+	--shadow: rgba(163, 230, 53, 0.3);
+	--second-shadow: #10b981;
+	--text-shadow: #a3e635;
+	--list-bg: linear-gradient(90deg, rgba(16, 185, 129, 0.1), rgba(163, 230, 53, 0.1));
 }
 
 * {
@@ -202,7 +208,7 @@ header {
 }
 
 header img {
-	width: 120px;
+	width: 160px;
 	height: auto;
 	border-radius: 10px;
 }
@@ -217,6 +223,7 @@ header img {
 	padding: 10px 20px;
 	font-size: 1rem;
 	border: 1px solid var(--btn-inherit);
+	border-radius: var(--border-radius);
 	margin-right: 5px;
 	font-weight: 700;
 	transition: all 0.3s ease-in-out;
@@ -227,6 +234,7 @@ header img {
 	font-size: 1rem;
 	background: var(--btn-accent);
 	box-shadow: 3px 3px 3px var(--gift);
+	border-radius: var(--border-radius);
 	text-align: center;
 	font-weight: 700;
 	transition: all 0.3s ease;
@@ -708,7 +716,7 @@ footer a img {
 	}
 
 	header img {
-		max-width: 100px;
+		max-width: 140px;
 	}
 
 	.h-violet-btn {
